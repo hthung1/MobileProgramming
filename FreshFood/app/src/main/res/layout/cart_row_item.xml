@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageCart"
+            android:layout_width="111dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/popularfood1"
+            tools:layout_editor_absoluteY="28dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/nameFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/semibold"
+            android:text="Float Cake Vietnam"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/Delete_cart"
+            app:layout_constraintStart_toEndOf="@+id/imageCart"
+            app:layout_constraintTop_toTopOf="@+id/imageCart" />
+
+        <TextView
+            android:id="@+id/priceFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="$17.05"
+            android:textColor="#FF6813"
+            app:layout_constraintStart_toStartOf="@+id/nameFood"
+            app:layout_constraintTop_toBottomOf="@+id/nameFood" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="x2"
+            app:layout_constraintBottom_toBottomOf="@+id/priceFood"
+            app:layout_constraintStart_toEndOf="@+id/priceFood"
+            app:layout_constraintTop_toTopOf="@+id/priceFood" />
+
+        <ImageView
+            android:id="@+id/Delete_cart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageCart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageCart"
+            app:srcCompat="@drawable/ic_baseline_delete_outline_24"
+            tools:ignore="VectorDrawableCompat" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
